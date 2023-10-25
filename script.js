@@ -9,6 +9,10 @@ let longueur;
 
 test = false;
 
+function moveToEnd() {
+    display.scrollLeft = display.scrollWidth;
+}
+
 function click(value) {
     if (displayValue != "0" && test == false) {
         displayValue = displayValue + value
@@ -17,6 +21,7 @@ function click(value) {
         test = false;
     }
     display.value = displayValue;
+    moveToEnd()
 }
 remove.addEventListener("click", () => {
     if (displayValue.length === 1 || test == true) {
@@ -26,7 +31,7 @@ remove.addEventListener("click", () => {
         displayValue = displayValue.slice(0, -1);
     }
     display.value = displayValue;
-    console.log(displayValue.length);
+    moveToEnd()
 })
 
 function one() { click("1") }
@@ -62,6 +67,7 @@ function enter() {
     }
     display.value = result;
     test = true;
+    moveToEnd()
 }
 function reset() {
     displayValue = "0"
