@@ -63,6 +63,9 @@ function enter() {
     } catch (erreur) {
         result = "error";
     }
+    if (result == undefined) {
+        result = "error";
+    }
     display.value = result;
     test = true;
 }
