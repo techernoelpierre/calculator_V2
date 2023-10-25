@@ -1,6 +1,8 @@
 const display = document.querySelector("#display");
 const remove = document.querySelector("#remove");
 
+display.disabled = true;
+
 let displayValue = display.value;
 let result = 0;
 let longueur;

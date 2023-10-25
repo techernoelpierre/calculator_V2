@@ -26,7 +26,6 @@ body {
     outline: solid 2px #F3F3F3;
     text-align: right;
     padding: 0 20px;
-    pointer-events: none;
     font-size: x-large;
 }
 .btn {
