@@ -12,11 +12,13 @@ test = false;
 function moveToEnd() {
     display.scrollLeft = display.scrollWidth;
 }
-
 function click(value) {
     if (displayValue != "0" && test == false) {
         displayValue = displayValue + value
-    } else {
+    } else if (value === ".") {
+        displayValue = displayValue + value
+    }
+    else {
         displayValue = value;
         test = false;
     }
@@ -72,5 +74,4 @@ function enter() {
 function reset() {
     displayValue = "0"
     display.value = displayValue
-
 }
