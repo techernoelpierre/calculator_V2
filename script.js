@@ -16,23 +16,18 @@ function click(value) {
         displayValue = value;
         test = false;
     }
-
     display.value = displayValue;
 }
 remove.addEventListener("click", () => {
-
     if (displayValue.length === 1 || test == true) {
         displayValue = "0";
         test = false;
     } else {
         displayValue = displayValue.slice(0, -1);
     }
-
     display.value = displayValue;
     console.log(displayValue.length);
-
 })
-
 
 function one() { click("1") }
 function two() { click("2") }
@@ -44,7 +39,6 @@ function seven() { click("7") }
 function eight() { click("8") }
 function nine() { click("9") }
 function zero() { click("0") }
-
 
 function addition() { click("+") }
 function substraction() { click("-") }
@@ -74,4 +68,3 @@ function reset() {
     display.value = displayValue
 
 }
-
