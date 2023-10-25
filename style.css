@@ -1,0 +1,77 @@
+body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.calculator {
+    border: solid 2px #F3F3F3;
+    padding: 20px;
+    border-radius: 20px;
+    height: auto;
+    background-color: #fff;
+}
+.button {
+    display: flex;
+    flex-direction: column;
+}
+.display {
+    width: 290px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 20px;
+    border: none;
+    outline: solid 2px #F3F3F3;
+    text-align: right;
+    padding: 0 20px;
+    pointer-events: none;
+    font-size: x-large;
+}
+.btn {
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    border-radius: 10px;
+    border: solid 2px;
+}
+.btn:active {
+    box-shadow: inset 0px 0px 25px -2px rgba(0,0,0,0.38);
+}
+.delet {
+    display: flex;
+    justify-content: space-between;
+}
+.operation {
+    display: flex;
+}
+.column {
+    display: flex;
+}
+.symboles {
+    display: flex;
+    flex-direction: column;
+}
+.zero {
+    display: flex;
+    justify-content: center;
+}
+#ac {
+    width: 120px;
+}
+#enter {
+    height: 120px;
+}
+.blue {
+    background-color: #0085FF;
+    border-color: #99CEFF;
+}
+.red {
+    background-color: #FF005C;
+    border-color: #FF9BBF;
+}
+.default {
+    background-color: #fff;
+    border-color: #F3F3F3;
+}

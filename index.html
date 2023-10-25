@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./src/calculatorV2.png">
+    <title>calculatrice v2</title>
+</head>
+<body>
+    
+    <div class="calculator">
+            <input type="text" class="display" id="display" value="0">
+            <div class="button">
+
+                <div class="delet column">
+                    <div class="column">
+                        <button id="remove" class="btn red">d</button>
+                        <button onclick="comma()" class="btn red">.</button>
+                    </div>
+                    
+                    <button onclick="reset()" id="ac" class="btn red">AC</button>
+                </div>
+                <div class="operation">
+                    <div class="number">
+                        <div class="column">
+                            <button onclick="one()" class="btn default">1</button>
+                            <button onclick="two()" class="btn default">2</button>
+                            <button onclick="three()" class="btn default">3</button>
+                        </div>
+                        <div class="column">
+                            <button onclick="four()" class="btn default">4</button>
+                            <button onclick="five()" class="btn default">5</button>
+                            <button onclick="six()" class="btn default">6</button>
+                        </div>
+                        <div class="column">
+                            <button onclick="seven()" class="btn default">7</button>
+                            <button onclick="eight()" class="btn default">8</button>
+                            <button onclick="nine()" class="btn default">9</button>
+                        </div>
+                        <div class="column zero">
+                            
+                            <button onclick="zero()" class="btn default">0</button>
+                            
+                        </div>
+        
+                    </div>
+                    <div class="symboles column">
+                        <button onclick="addition()" class="btn blue">+</button>
+                        <button onclick="substraction()" class="btn blue">-</button>
+                        <button onclick="multiplication()" class="btn blue">x</button>
+                        <button onclick="division()" class="btn blue">/</button>
+                        
+                        
+                    </div>
+                    <div class="symboles column">
+                        <button onclick="leftParenthesis()" class="btn blue">(</button>
+                        <button onclick="rightParenthesis()" class="btn blue">)</button>
+                        <button onclick="enter()" id="enter" class="btn blue">enter</button>
+                    </div>
+                </div>
+            </div>
+    </div>
+
+    <script src="./script.js"></script>
+
+</body>
+</html>
